@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MemeCoin Pet Installer</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+    body { max-width: 680px; margin: 3rem auto; padding: 0 1rem; background: #080b10; color: #edf4f0; }
+    main { border: 1px solid #26352d; border-radius: 18px; padding: 1.5rem; background: #101812; }
+    h1 { color: #63f59a; }
+    p { line-height: 1.55; color: #c2d0c8; }
+    .warning { border-left: 3px solid #e9b949; padding-left: 1rem; }
+    esp-web-install-button { display: block; margin: 1.5rem 0; }
+    a { color: #7ef5ad; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>🐸 MemeCoin Pet</h1>
+  <p>Browser installer template for the LILYGO T-Dongle-S3.</p>
+  <p class="warning"><strong>Not ready to flash yet.</strong> Compile and host a merged ESP32-S3 firmware binary, then replace the placeholder URL in <code>manifest.json</code>. Do not click Install expecting this template to contain firmware.</p>
+  <esp-web-install-button manifest="./manifest.json">
+    <span slot="unsupported">Use desktop Chrome or Microsoft Edge with Web Serial support, on an HTTPS website.</span>
+  </esp-web-install-button>
+  <p>Source code and setup notes are in the project README.</p>
+  <p><a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools documentation</a></p>
+</main>
+</body>
+</html>
